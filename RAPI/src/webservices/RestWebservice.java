@@ -1,0 +1,5 @@
+package webservices;
+
+class RestWebservice {
+
+}

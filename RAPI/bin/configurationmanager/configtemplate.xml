@@ -1,0 +1,32 @@
+<rapi required=true quantity=1>
+	<config required=true quantity=1>
+		<dbconfig required=false quantity=1>
+			<connection required=true quantity=1>
+				<ipaddress required=true quantity=1>
+				</ipaddress>
+			</connection>
+			<user required=true quantity=1>
+			</user>
+		</dbconfig>
+		<webservices required=false quantity=multiple>
+			<soapservice required=false quantity=multiple id=required consume=required>
+				<ipaddress required=true quantity=1>
+				</ipaddress>
+			</soapservice>
+			<restservice required=false quantity=multiple id=required consume=required>
+			</restservice>
+		</webservices>
+		<files required=false quantity=multiple>
+			<appdirectory required=false quantity=multiple id=optional location=required check=directoryexists>
+				<appfile required=false quantity=multiple id=optional check=locationoverlap>
+				</appfile>
+			</appdirectory>
+			<appfile required=false quantity=multiple id=optional location=required check=directoryexists>
+			</appfile>
+		</files>
+		<businesslogic required=true quantity=1>
+			<pointofcontact required=true quantity=1>
+			</pointofcontact>
+		</businesslogic>
+	</config>
+</rapi>
